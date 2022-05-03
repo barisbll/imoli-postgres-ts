@@ -1,0 +1,16 @@
+"use strict";
+var __importDefault = (this && this.__importDefault) || function (mod) {
+    return (mod && mod.__esModule) ? mod : { "default": mod };
+};
+Object.defineProperty(exports, "__esModule", { value: true });
+const path_1 = __importDefault(require("path"));
+const sequelize_typescript_1 = require("sequelize-typescript");
+const modelPath = path_1.default.join(__dirname, "..", "models");
+const sequelize = new sequelize_typescript_1.Sequelize({
+    database: "imoli_postgres_ts",
+    dialect: "postgres",
+    username: "barisbll",
+    password: "postgresql",
+    models: [modelPath],
+});
+exports.default = sequelize;
