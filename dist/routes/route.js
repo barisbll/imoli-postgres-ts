@@ -1,5 +1,11 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
 const express_1 = require("express");
+const controller_1 = require("../controllers/controller");
 const router = (0, express_1.Router)();
+router.get("/films", controller_1.getFilms);
+router.post("/favorites", controller_1.postFavorites);
+router.get("/favorites", controller_1.getFavorites);
+router.get("/favorite/:id", controller_1.getFavorite);
+router.get("/favorite/:id/file", controller_1.getFile);
 exports.default = router;

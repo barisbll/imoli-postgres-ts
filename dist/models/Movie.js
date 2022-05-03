@@ -20,13 +20,13 @@ const People_1 = __importDefault(require("./People"));
 let Movie = class Movie extends sequelize_typescript_1.Model {
 };
 __decorate([
-    sequelize_typescript_1.Column,
     sequelize_typescript_1.Unique,
+    sequelize_typescript_1.Column,
     __metadata("design:type", String)
 ], Movie.prototype, "title", void 0);
 __decorate([
-    sequelize_typescript_1.Column,
     sequelize_typescript_1.Unique,
+    sequelize_typescript_1.Column,
     __metadata("design:type", Date)
 ], Movie.prototype, "releaseDate", void 0);
 __decorate([

@@ -18,9 +18,9 @@ const MovieListMovie_1 = __importDefault(require("./MovieListMovie"));
 let MovieList = class MovieList extends sequelize_typescript_1.Model {
 };
 __decorate([
-    sequelize_typescript_1.Column,
     sequelize_typescript_1.AllowNull,
     sequelize_typescript_1.Unique,
+    sequelize_typescript_1.Column,
     __metadata("design:type", String)
 ], MovieList.prototype, "name", void 0);
 __decorate([
